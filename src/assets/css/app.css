@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav{
+    @apply bg-white shadow-md px-4 rounded h-10 leading-10  text-sm;
+}
+
+.active{
+    @apply font-bold bg-primary-600 text-white;
+}
