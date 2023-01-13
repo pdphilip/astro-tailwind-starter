@@ -6,6 +6,7 @@
 ```bash
 git clone https://github.com/pdphilip/astro-tailwind-starter.git MY_PROJECT
 cd MY_PROJECT
+rm -rf .git
 npm install
 npm run dev
 
