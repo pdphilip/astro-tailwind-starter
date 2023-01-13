@@ -7,6 +7,7 @@
 git clone https://github.com/pdphilip/astro-tailwind-starter.git MY_PROJECT
 cd MY_PROJECT
 npm install
+npm run dev
 
 ```
 
