@@ -1,14 +1,15 @@
 # Astro starter with Tailwind (And Vue if you like)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+## Getting started
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```bash
+git clone https://github.com/pdphilip/astro-tailwind-starter.git MY_PROJECT
+cd MY_PROJECT
+npm install
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+```
 
-
-## 🚀 Project Structure
+## Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -17,11 +18,19 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── assets/
+│   │   └── css/
+│   │   │   └── app.css
+│   │   └── img/
+│   │   │   └── logo.svg
 │   ├── components/
 │   │   └── Card.astro
 │   ├── layouts/
+│   │   └── Footer.astro
 │   │   └── Layout.astro
+│   │   └── Navigration.astro
 │   └── pages/
+│       └── about.astro
 │       └── index.astro
 └── package.json
 ```
@@ -32,7 +41,7 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -45,6 +54,4 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `npm run astro --help` | Get help using the Astro CLI                       |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
