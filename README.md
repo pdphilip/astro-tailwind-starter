@@ -1,4 +1,5 @@
-# Astro starter with Tailwind (And Vue if you like)
+# Astro starter with Tailwind   
+(And Vue if you like)
 
 ## Getting started
 
