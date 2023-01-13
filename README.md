@@ -22,7 +22,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   │   └── css/
 │   │   │   └── app.css
 │   │   └── img/
-│   │   │   └── logo.svg
+│   │       └── logo.svg
 │   ├── components/
 │   │   └── Card.astro
 │   ├── layouts/
