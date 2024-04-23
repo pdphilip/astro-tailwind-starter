@@ -1,0 +1,32 @@
+---
+import Navigation from './partials/Navigation.astro';
+import '../assets/css/app.css';
+import Footer from './partials/Footer.astro';
+import { ViewTransitions } from 'astro:transitions';
+const { title } = Astro.props;
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body>
+
+        <div class="bg-white container w-full max-w-4xl mx-auto">
+            <Navigation />
+			<main >
+            <slot />
+			</main>
+            <Footer />
+        </div>
+
+	</body>
+
+</html>

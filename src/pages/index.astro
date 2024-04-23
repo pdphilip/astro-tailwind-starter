@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button';
+---
+
+<Layout title="Welcome">
+	<main>
+		<h1>Welcome!</h1>
+        <p>Get started by editing <code>src/pages/index.astro</code></p>
+        <Button client:only="react">
+            <h2>Example Card</h2>
+            <p>This is an example card component.</p>
+        </Button>
+	</main>
+</Layout>
