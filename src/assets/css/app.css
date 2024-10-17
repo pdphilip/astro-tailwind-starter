@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 
-.nav{
-    @apply bg-white shadow-md px-4 rounded h-10 leading-10  text-sm;
+.nav {
+    @apply text-sm font-semibold leading-6 text-gray-900;
 }
 
-.active{
-    @apply font-bold bg-primary-600 text-white;
+.nav.active {
+    @apply font-bold text-primary-500;
 }

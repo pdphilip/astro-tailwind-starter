@@ -1,32 +1,30 @@
 ---
-import Navigation from './partials/Navigation.astro';
 import '../assets/css/app.css';
 import Footer from './partials/Footer.astro';
-import { ViewTransitions } from 'astro:transitions';
-const { title } = Astro.props;
-
+import {ViewTransitions} from 'astro:transitions';
+import Header from "./partials/Header.jsx";
+const {title} = Astro.props;
+const currentPath = new URL(Astro.request.url).pathname;
 ---
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<ViewTransitions />
-	</head>
-	<body>
-
-        <div class="bg-white container w-full max-w-4xl mx-auto">
-            <Navigation />
-			<main >
-            <slot />
-			</main>
-            <Footer />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <meta name="generator" content={Astro.generator}/>
+    <title>{title}</title>
+    <ViewTransitions/>
+</head>
+<body data-astro-rerun>
+<div class="bg-white">
+    <Header client:load currentPath={currentPath}/>
+    <main class="isolate">
+        <div class="mx-auto mt-32 max-w-7xl px-6 lg:px-8">
+            <slot/>
         </div>
-
-	</body>
-
+    </main>
+    <Footer/>
+</div>
+</body>
 </html>
